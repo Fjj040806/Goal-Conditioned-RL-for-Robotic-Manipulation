@@ -1,6 +1,10 @@
 # Robot Learning Lab — Goal-conditioned Offline RL
 
-A reproducible, interactive **state-based simulation study** comparing GCBC, GCIQL and HIQL on OGBench Cube Single / Double. This project adds an experiment harness, traceable evaluations, ablations and a browser replay explorer around pinned upstream algorithm implementations.
+A reproducible study of **goal-conditioned offline reinforcement learning for robotic manipulation**. Using recorded OGBench experience, it compares GCIQL and hierarchical HIQL against a GCBC imitation baseline on Cube Single and Cube Double. The project combines controlled multi-seed experiments, dataset-size and subgoal-interval ablations, trained inference weights, and an interactive trajectory explorer to examine how value learning and temporal hierarchy affect goal-reaching under a limited training budget.
+
+![Project overview: offline datasets, goal-conditioned learning, and simulator evaluation](docs/assets/project-overview.png)
+
+*Project workflow and core evaluation protocol. The illustration is schematic; interactive replays use recorded simulator states.*
 
 [Open interactive preview (owner-only)](https://fjj-robot-learning-lab.jauntycup66.chatgpt.site) · [Results and limitations](docs/REPORT.md) · [Mathematical objectives](docs/METHODS.md) · [Machine-readable evidence](docs/results.json) · [Resume bullets](docs/RESUME.md)
 
