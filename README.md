@@ -10,13 +10,13 @@ A reproducible study of **goal-conditioned offline reinforcement learning for ro
 
 The hosted preview is currently owner-private. The browser page is a self-contained HTML file. It can also be downloaded and opened locally. It visualizes recorded states; it does not run a live robot policy or MuJoCo in JavaScript.
 
-## See the principle in motion
+## Hierarchical control in motion
 
-![Animated illustration of hierarchical goal-conditioned manipulation](docs/assets/hiql-principle.gif)
+![Three-dimensional illustration of hierarchical manipulation](docs/assets/hiql-control-3d.gif)
 
-**Blue:** final object goal. **Green:** current intermediate subgoal. **Orange:** a small low-level action. The high-level policy decomposes a distant goal into intermediate states; the low-level policy acts toward the current subgoal. Approach, grasp, lift, transfer and place labels explain the scripted example; they are not discrete action primitives implemented by HIQL.
+The small ring marks the current intermediate target; the outlined square marks the final cube location. A high-level policy selects intermediate states, while a low-level policy produces actions toward them.
 
-*This animation is a conceptual illustration with scripted geometry, not a trained-policy rollout. Actual recorded evaluations are available in the interactive explorer. HIQL learns both levels from offline experience; simulator interaction in this project is used for evaluation.*
+*Scripted 3D illustration, not a trained-policy rollout. The displayed motion phases are explanatory labels, not HIQL action primitives. See the interactive explorer for recorded evaluations.*
 
 ## What is included
 
